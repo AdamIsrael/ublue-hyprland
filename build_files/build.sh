@@ -14,7 +14,7 @@ dnf5 install -y tmux
 
 # hyprland
 dnf5 install -y hyprland
-dnf5 install -y waybar hyprpaper dolphin
+dnf5 install -y waybar hyprpaper dolphin dunst
 
 # Use a COPR Example:
 #
@@ -23,10 +23,19 @@ dnf5 install -y waybar hyprpaper dolphin
 # Disable COPRs so they don't end up enabled on the final image:
 # dnf5 -y copr disable ublue-os/staging
 
+# Install the framework ectool for fan control: https://copr.fedorainfracloud.org/coprs/bsvh/fw-ectool/
+dnf5 -y copr enable bsvh/fw-ectool
+dnf5 -y install fw-ectool
+dnf5 -y copr disable bsvh/fw-ectool
+
+
 # install ghostty: https://ghostty.org/docs/install/binary
 dnf5 -y copr enable pgdev/ghostty
 dnf5 -y install ghostty
 dnf5 -y copr disable pgdev/ghostty
+
+
+cp -r /ctx/.config /etc/custom-configs
 
 #### Example for enabling a System Unit File
 
