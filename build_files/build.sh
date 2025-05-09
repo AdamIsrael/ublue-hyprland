@@ -14,7 +14,7 @@ dnf5 install -y tmux
 
 # hyprland
 dnf5 install -y hyprland
-dnf5 install -y waybar hyprpaper dolphin dunst pavucontrol hypridle
+dnf5 install -y waybar hyprpaper dolphin dunst pavucontrol hypridle hyprlock
 
 # Use a COPR Example:
 #
