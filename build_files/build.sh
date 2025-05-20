@@ -24,9 +24,9 @@ dnf5 install -y waybar hyprpaper dolphin dunst pavucontrol hypridle hyprlock
 # dnf5 -y copr disable ublue-os/staging
 
 # Install the framework ectool for fan control: https://copr.fedorainfracloud.org/coprs/bsvh/fw-ectool/
-dnf5 -y copr enable bsvh/fw-ectool
-dnf5 -y install fw-ectool
-dnf5 -y copr disable bsvh/fw-ectool
+# dnf5 -y copr enable bsvh/fw-ectool
+# dnf5 -y install fw-ectool
+# dnf5 -y copr disable bsvh/fw-ectool
 
 
 # install ghostty: https://ghostty.org/docs/install/binary
