@@ -29,10 +29,12 @@ dnf5 install --skip-unavailable -y waybar hyprpaper dolphin dunst pavucontrol hy
 # dnf5 -y copr disable bsvh/fw-ectool
 
 
+# Temporarily disable this: ile /usr/share/terminfo/g/ghostty from install of ghostty-1.1.3-1.fc42.x86_64 conflicts with file from package ncurses-term-6.5-5.20250125.fc42.noarch
+
 # install ghostty: https://ghostty.org/docs/install/binary
-dnf5 -y copr enable pgdev/ghostty
-dnf5 -y install ghostty
-dnf5 -y copr disable pgdev/ghostty
+# dnf5 -y copr enable pgdev/ghostty
+# dnf5 -y install ghostty
+# dnf5 -y copr disable pgdev/ghostty
 
 
 cp -r /ctx/.config /etc/custom-configs
